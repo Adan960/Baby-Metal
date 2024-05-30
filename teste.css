@@ -1,0 +1,255 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow-x: hidden;
+    transition: 1s;
+    background-image: url(Sprites/backgound.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#page{
+    scale: 0.6;
+    margin-right: 10px;
+    width: 245;
+    height: 77;
+}
+#cabeçalho{
+    background-image: linear-gradient(to bottom, black 70%,rgba(0, 0, 0, 0));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2px;
+    position: fixed;
+    width: 193vh;
+    top: -2px;
+    z-index: 100;
+}
+a{
+    font-size: 18px;
+    margin-top: 30px;
+    text-decoration: none;
+    margin-left: 40px;
+    color: white;
+}
+
+.superior > a:hover{
+    color: red; 
+    text-decoration: line-through;
+    transition: 0.3s;
+}
+#escolha{
+    width: 200px;
+    scale: 0.55;
+    margin-left: 30px;
+}
+#top{
+    color: red;
+    text-decoration: none;
+}
+
+.slider{
+    margin: 0 auto;
+    width: auto;
+    height: 80vh;
+}
+.slides{
+    width: 200%;
+    height: 80vh;
+    display: flex;
+    margin-top: 10vh;
+    gap: 3%;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 0.5s;
+    margin-top: 1%;
+}
+.manual-navigation{
+    position: absolute;
+    top: 94vh;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    gap: 20px;
+}
+.manual-btn{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(122, 0, 0);
+    cursor: pointer;
+}
+input{
+    display: none;
+}
+.slide img{
+    width: 75vh;
+    opacity: 1;
+}
+
+#radio1:checked ~ .first{
+    margin-left: -7%;
+}
+#radio2:checked ~ .first{
+    margin-left: -30%;
+}
+#radio3:checked ~ .first{
+    margin-left: -53%;
+}
+#radio4:checked ~ .first{
+    margin-left: -76%;
+}
+#radio5:checked ~ .first{
+    margin-left: -99%;
+}
+#radio6:checked ~ .first{
+    margin-left: -121%;
+}
+#radio7:checked ~ .first{
+    margin-left: -180%;
+}
+#radio8:checked ~ .first{
+    margin-left: -208.5%;
+}
+
+
+#radio1:not(:checked) ~ .primeiro{
+    opacity: 0.4;
+}
+#radio2:not(:checked) ~ .segundo{
+    opacity: 0.4;
+}
+#radio3:not(:checked) ~ .terceiro{
+    opacity: 0.4;
+}
+#radio4:not(:checked) ~ .quarto{
+    opacity: 0.4;
+}
+#radio5:not(:checked) ~ .quinto{
+    opacity: 0.4;
+}
+#radio6:not(:checked) ~ .sexto{
+    opacity: 0.4;
+}
+#radio7:not(:checked) ~ .setimo{
+    opacity: 0.4;
+}
+#radio8:not(:checked) ~ .oitavo{
+    opacity: 0.4;
+}
+.nada{
+    opacity: 0.4;
+}
+
+#black{
+    width: auto;
+    margin-top: -4vh;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, black 90%,rgba(255, 255, 255, 0));
+}
+
+#resto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#news{
+    margin-top: 7%;
+    scale: 0.6;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box{
+    margin-left: auto;
+    margin-right: auto;
+    width: 120vh;
+    height: 13vh;
+    background-color: #0d0d0d;
+    margin-top: 13px;
+    transition: 0.3s;
+}
+.box:hover{
+    box-shadow: 0 0 20px red;
+}
+
+.box > span{
+    color: red;
+    position: relative;
+    top: 3.2vh;
+    left: 6vh;
+}
+.box > p{
+    color: white;
+    position: relative;
+    top: 5vh;
+    left: 6vh;
+}
+#view{
+    width: 170px;
+    height: 40px;
+    background-color: black;
+    border: 1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: red;
+}
+#view:hover{
+    background-color: #95000c;
+    border: 1px solid #95000c;
+    color: black;
+}
+#video{
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+#faixa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+    margin-bottom: 10vh;
+    width: auto;
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.696);
+}
+.social{
+    margin-left: 30px;
+    width: 3vh;
+    cursor: pointer;
+}
+#final{
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 3vh;
+    margin-bottom: 4vh;
+    font-size: 20px;
+}
+#voltar{
+    color: #95000c;
+    width: 10vh;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.726);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #95000c;
+    position: fixed;
+    bottom: 3vh;
+    right: 3vh;
+    cursor: pointer;
+}
+#seta{
+    width: 5vh;
+}
